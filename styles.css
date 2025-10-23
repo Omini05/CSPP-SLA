@@ -1,0 +1,41 @@
+/* File: styles.css */
+/* Save this block as a separate file named "styles.css" in the same folder as index.html */
+
+
+:root{
+--bg: #0f172a;
+--card: #0b1220;
+--muted: #9aa4b2;
+--accent: #7c3aed;
+--glass: rgba(255,255,255,0.03);
+}
+
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+body{background:linear-gradient(180deg,var(--bg) 0%, #071021 100%);color:#e6eef8;line-height:1.6}
+.container{max-width:900px;margin:48px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.7)}
+header h1{font-size:clamp(1.5rem,2.4vw,2.4rem);margin:0 0 8px}
+.byline{color:var(--muted);margin:0 0 20px}
+.lead p{font-size:1.05rem;color:#d7e6ff}
+h2{margin-top:18px;color:#dbe9ff}
+h3{margin:12px 0 6px;color:#e6f3ff}
+p{margin:10px 0}
+ul{margin:10px 0 20px 20px}
+.benefits li{margin:8px 0;padding:10px;background:var(--glass);border-radius:8px}
+hr{border:0;height:1px;background:linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);margin:22px 0}
+.site-footer{text-align:center;padding:18px;color:var(--muted);font-size:0.9rem}
+
+
+/* Responsive tweaks */
+@media (max-width:640px){
+.container{margin:20px;padding:18px}
+header h1{font-size:1.3rem}
+}
+
+
+/* Utility */
+strong{color:#ffffff}
+
+
+/* End of styles.css */
